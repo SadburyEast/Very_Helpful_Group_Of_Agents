@@ -168,7 +168,3 @@ Progress streams node by node, so you can watch the supervisor's routing decisio
 - [ ] On larger hardware: parallel per-source-cluster writers via agent-level `Send`
 
 ---
-
-## License
-
-Add a license of your choice (MIT is a common default for portfolio projects).

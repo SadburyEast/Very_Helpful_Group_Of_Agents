@@ -135,15 +135,14 @@ research_agent/
 **Prerequisites:** Python 3.10+, [Ollama](https://ollama.com), a [Tavily](https://tavily.com) API key. An 8GB GPU is enough.
 
 ```bash
-git clone <your-repo-url>
-cd research_agent
+git clone "github.com/SadburyEast/Very_Helpful_Group_Of_Agents"
+cd Very_Helpful_Group_Of_Agents
 
 pip install -r requirements.txt
 
 ollama pull qwen3.5:9b
 
-cp .env.example .env
-# edit .env and set your Tavily key (starts with tvly-)
+# create .env and set your Tavily key 
 
 python main.py "your research question"
 ```

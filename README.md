@@ -2,7 +2,7 @@
 
 A supervisor-routed multi-agent research system built on **LangGraph**, running a **local 9B model on a laptop GPU (RTX 3070, 8GB VRAM)** with cross-session memory.
 
-The design goal was *architecture that is honest about what it can do on the available hardware*, not architecture that looks impressive but falls apart under a follow-up question. Every choice below has a reason, and the known limitations are listed openly at the end.
+The design goal was architecture that is honest about what it can do on the available hardware.
 
 ---
 
@@ -153,8 +153,6 @@ Progress streams node by node, so you can watch the supervisor's routing decisio
 ---
 
 ## Status and known limitations
-
-Stated up front, on purpose:
 
 - **Parallel speedup is not yet benchmarked.** `Send` fan-out is designed to parallelize Tavily calls, but a timed comparison against a sequential baseline has not been run yet.
 - **Recall threshold is untuned.** `RECALL_SIMILARITY_THRESHOLD=0.6` is an initial guess, pending checks against real near-duplicate queries.
